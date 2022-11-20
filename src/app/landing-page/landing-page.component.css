@@ -1,0 +1,43 @@
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+.title{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    margin-left: 10px;
+}
+.navBox{
+    background-color:black;
+}
+.navitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+   display: flex;
+   position: relative;
+}
+.navButton{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color:white;
+    border-width: 1px;
+} 
+.navButton:hover{
+    cursor: pointer;
+    border-color: white;
+    
+}
