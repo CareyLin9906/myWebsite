@@ -17,4 +17,7 @@ export class LandingPageComponent implements OnInit {
   toAbout(){
     this.router.navigateByUrl('/about');
   }
+  toExperience(){
+    this.router.navigateByUrl('/experience');
+  }
 }

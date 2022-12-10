@@ -7,6 +7,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { ExperiencePageComponent } from './experience-page/experience-page.component';
 
 const routes: Routes = [
   {path:'about', component: AboutPageComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
     LandingPageComponent,
     ProjectsPageComponent,
     AboutPageComponent,
+    ExperiencePageComponent,
   ],
   imports: [
     BrowserModule,
