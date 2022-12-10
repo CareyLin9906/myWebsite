@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <header class="topHeader">
     <div class="title">
-        Carey's Website
+        Chi-Jui, Lin
     </div>
     <nav class="navBar">
         <div class="navitem">
-            <button class="navButton">
+            <button (click)="toAbout()" class="navButton">
                 About
             </button>
         </div>
         <div class="navitem">
-            <button class="navButton">
-                Projects
-            </button>
+                <button (click)="toProjects()" class="navButton">
+                    Projects
+                </button>
         </div>
         <div class="navitem">
             <button class="navButton">
@@ -21,10 +21,12 @@
         </div>
         
     </nav>
+    
 </header>
-
 <body>
-    <div class="mainBox">
-        
-    </div>
+    <p>
+        app-landing-page
+    </p>
+    <router-outlet></router-outlet>
+    
 </body>

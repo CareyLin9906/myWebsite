@@ -1,10 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { CommonModule } from '@angular/common';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'', component: AboutPageComponent},
+  {path:'projects', component: ProjectsPageComponent},
+  {path:'about', component: AboutPageComponent}
+]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations:[],
+  imports:[
+    RouterModule.forRoot(routes)
+  ],
+  exports:[RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponents = [LandingPageComponent, ProjectsPageComponent, AboutPageComponent]

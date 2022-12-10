@@ -4,17 +4,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AboutPageComponent } from './about-page/about-page.component';
+
+const routes: Routes = [
+  {path:'about', component: AboutPageComponent},
+  {path:'projects', component: ProjectsPageComponent},
+  {path: '', component: AboutPageComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ProjectsPageComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [LandingPageComponent, ProjectsPageComponent, AboutPageComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
