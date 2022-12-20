@@ -8,6 +8,7 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
+import { EhealthComponent } from './projects/ehealth/ehealth.component';
 
 const routes: Routes = [
   {path:'about', component: AboutPageComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
     ProjectsPageComponent,
     AboutPageComponent,
     ExperiencePageComponent,
+    EhealthComponent,
   ],
   imports: [
     BrowserModule,

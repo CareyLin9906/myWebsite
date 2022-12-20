@@ -1,0 +1,11 @@
+.content-container{
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%);
+    border-width: thin;
+    border-style:solid;
+    border-radius: 0.2cm;
+    border-color: rgb(127, 120, 120);
+}
