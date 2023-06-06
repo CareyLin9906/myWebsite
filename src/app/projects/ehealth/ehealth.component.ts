@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {YouTubePlayerModule} from '@angular/youtube-player';
 @Component({
   selector: 'app-ehealth',
   templateUrl: './ehealth.component.html',
